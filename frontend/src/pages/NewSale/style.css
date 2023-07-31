@@ -1,0 +1,164 @@
+.container-newsale header{
+    background-color: #cd0f3f;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.container-newsale header p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.container-newsale .search-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-newsale .search-item input{
+    padding: 8px;
+    border: 1px solid #cd0f3f;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 5px;
+}
+
+.container-newsale button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #cd0f3f;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.container-newsale button:hover{
+    background-color: #cd0f3e85;
+}
+
+.container-newsale .box-sale{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    max-height: 580px;
+    overflow-y: auto;
+}
+
+.container-newsale table {
+    border-collapse: collapse;
+    width: 87%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.container-newsale th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #cd0f3f;
+}
+.container-newsale td img:hover{
+    background-color: rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+}
+
+.container-newsale th{
+    border-radius: 10px 10px 0 0;
+}
+
+.container-newsale thead {
+    background-color: #cd0f3f;
+    color: white;
+}
+
+.container-newsale tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container-newsale .total-sale{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.container-newsale .total-sale p{
+    margin-bottom: 10px;
+}
+
+.container-newsale .suggestions-input{
+    position:absolute;
+    top: 160px;
+    left: 6.5vw;
+    width: 50%;
+    max-height: 560px;
+    overflow-y: auto;
+}
+
+.container-newsale .suggestions-input ul{
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-newsale .suggestions-input li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.container-newsale .amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-newsale .item-amount{
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:600px){
+    .container-newsale header{
+        justify-content: center;
+    }
+
+    .container-newsale .search-item input{
+        width: 65%;
+    }
+
+    .container-newsale table {
+        width: 95%;
+    }
+
+    .container-newsale .total-sale{
+        right: 15px;
+    }
+
+    .container-newsale .suggestions-input{
+        width: 40%;
+    }
+
+    .container-newsale .suggestions-input ul{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .container-newsale .amount{
+        flex-direction: column;
+    }
+}

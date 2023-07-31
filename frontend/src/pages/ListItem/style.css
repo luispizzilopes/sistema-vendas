@@ -1,0 +1,122 @@
+.container-list header{
+    background-color: #cd0f3f;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-list header p{
+    font-size: 20px;
+}
+
+.container-list header button{
+    position: absolute;
+    left: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    transition: 0.6s;
+}
+
+.container-list header button:hover{
+    background-color: white;
+    color: #cd0f3f;
+    border: 1px solid #ed0e46;
+}
+
+.container-list .search-item{
+    display: flex;
+    justify-content: center;
+}
+
+.container-list .search-item input{
+    padding: 5px;
+    border: 1px solid #cd0f3f;
+    border-radius: 5px;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.container-list .box-list{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    max-height: 580px;
+    overflow-y: auto;
+}
+
+.container-list table {
+    border-collapse: collapse;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container-list th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #cd0f3f;
+}
+
+.container-list td img:hover{
+    background-color: rgba(128, 128, 128, 0.404);
+    border-radius: 10px;
+}
+
+.container-list th{
+    border-radius: 10px 10px 0 0;
+}
+
+.container-list thead {
+    background-color: #cd0f3f;
+    color: white;
+}
+
+.container-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container-list .add-item{
+    position: fixed;
+    bottom: 20px;
+    right: 35px;
+}
+
+.container-list .add-item button{
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #cd0f3f;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    transition: 0.6s;
+}
+
+.container-list .add-item button:hover{
+    background-color: #cd0f3eb0;
+}
+
+@media(max-width:600px){
+    .container-list header button{
+        left: 10px;
+        top: 10px; 
+    }
+
+    .container-list table {
+        width: 95%;
+    }
+
+    .container-list .add-item{
+        right: 10px; 
+    }
+
+    .container-list .add-item button{
+        font-size: 20px;
+    }
+}

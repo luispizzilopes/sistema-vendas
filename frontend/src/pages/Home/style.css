@@ -1,0 +1,163 @@
+.container-home header{
+    background-color: #cd0f3f;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container-home header div{
+    display: flex;
+    align-items: center;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.container-home header p{
+    font-size: 30px;
+}
+
+.container-home header nav button{
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    transition: 0.6s;
+}
+
+.container-home header nav button:hover{
+    background-color: white;
+    color: #cd0f3f;
+    border: 1px solid #70001c;
+}
+
+.container-home .sales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.container-home .sales .box-icon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-home .sales .box-icon img{
+    margin-bottom: 10px;
+}
+
+.container-home .sales .box-icon p{
+    font-size: 25px;
+    color: rgb(55, 55, 55);
+}
+
+.container-home .sales .box-sales{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.container-home table {
+    border-collapse: collapse;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.container-home .sales .box-sales th, td {
+    padding: 8px;
+    text-align: center;
+    font-weight: 100;
+    border-bottom: 1px solid #cd0f3f;
+}
+
+.container-home th{
+    border-radius: 10px 10px 0 0;
+}
+
+.container-home thead {
+    background-color: #cd0f3f;
+    color: white;
+}
+
+.container-home tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container-home .sales .box-sales .button-detalhes{
+    background-color: rgb(0, 92, 128); 
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+
+.container-home .sales .box-sales .button-detalhes:hover{
+    background-color: rgba(0, 92, 128, 0.727);
+}
+
+.container-home .sales .box-sales .button-cancelar{
+    background-color: rgb(204, 27, 27); 
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.6s;
+    font-size: 20px;
+}
+
+.container-home .sales .box-sales .button-cancelar:hover{
+    background-color: rgba(204, 27, 27, 0.727);
+}
+
+@media(max-width:600px){
+    .container-home header{
+        flex-direction: column;
+        height: 180px;
+    }
+
+    .container-home header div{
+        flex-direction: column;
+    }
+
+    .container-home header nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-home header nav button{
+        margin-bottom: 5px;
+    }
+
+    .container-home table{
+        width: 98%;
+    }
+
+    .container-home th, td {
+        font-size: 16px;
+    }
+
+    .container-home .sales .box-sales .button-detalhes{
+        font-size: 16px;
+    }
+
+    .container-home .sales .box-sales .button-cancelar{
+        font-size: 16px;
+    }
+}
