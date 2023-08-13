@@ -1,4 +1,4 @@
-Pré-requisitos:
+Pré-requisitos: 
 Antes de começar, certifique-se de que você tenha instalado em seu sistema:
 .NET SDK 6; 
 Node.js (inclui o npm);
